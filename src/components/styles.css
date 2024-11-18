@@ -1,0 +1,95 @@
+/* Parent container for left-right layout */
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    margin: 0; /* Remove default margin */
+    background-image: url('https://www.godaddy.com/resources/wp-content/uploads/2017/09/wordpress-portfolio-examples-featured-IKyMJ4.tmp_.jpeg?size=3840x0'); /* Replace with the correct path to your image */
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repetition of the image */
+  }
+  
+  
+  /* Left section */
+  .home {
+    flex: 1; /* Left section takes one portion */
+    padding: 2rem; /* Add some space inside the section */
+    color: brown;
+}
+  
+  /* Right section */
+  .my-photo {
+    flex: 1; /* Right section takes one portion */
+    padding: 2rem; /* Add some space inside the section */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background for contrast */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    text-align: left; /* Align text to the right */
+  }
+  .profile-photo {
+    width: 400px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image fits within the dimensions */
+    margin-bottom: 1rem; /* Space below the image */
+  }
+.about-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    margin: 0; /* Remove default margin */
+    background-image: url('https://weblium.com/blog/wp-content/uploads/2021/05/19-Best-About-Me-Page-Examples-and-How-to-Write-a-Killer-About-Me-Page-1-1-1.png');
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repetition of the image */
+}
+.about {
+    flex: 1; /* Left section takes one portion */
+    padding: 2rem; /* Add some space inside the section */
+    color: white;
+}
+.skills-page {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .skills-header {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .skills-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .skill {
+    margin-bottom: 1.5rem;
+  }
+  
+  .skill h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    color: #444;
+  }
+  
+  .skill-bar {
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .skill-fill {
+    height: 100%;
+    background-color: #ff9900;
+    transition: width 0.5s ease-in-out;
+  }
+  
