@@ -53,7 +53,7 @@
     color: white;
 }
 .skills-page {
-  padding: 2rem;
+  margin-top: 110px;
   height: 100vh;
   display: flex;
   align-items: flex-start;
