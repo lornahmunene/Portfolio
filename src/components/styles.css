@@ -2,22 +2,50 @@
 .home-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     height: 100vh; /* Full viewport height */
     width: 100vw; /* Full viewport width */
-    margin: 0; /* Remove default margin */
-    background-image: url('https://www.godaddy.com/resources/wp-content/uploads/2017/09/wordpress-portfolio-examples-featured-IKyMJ4.tmp_.jpeg?size=3840x0'); /* Replace with the correct path to your image */
-    background-size: cover; /* Ensure the image covers the entire container */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent repetition of the image */
+    
+    background-color: #444;
+     
+}
+
+  h1 {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 90px;
+    margin-top: 130px;
+    animation: fadeIn 3s ease-out;
+
+  }
+  @keyframes slideInLeft{
+    from {
+      transform: translateX(-300px);
+    }
+    to {
+      transform:translateX(0) ;
+    }
+  }
+  p{
+    animation-name: slideInLeft;
+    animation-duration: 3s;
+    font-size: 30px;  
+
   }
   
   
-  /* Left section */
   .home {
     flex: 1; /* Left section takes one portion */
-    padding: 2rem; /* Add some space inside the section */
-    color: brown;
+    color:white;
+       margin-top: 5px;
+}
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity:1;
+    transform: translateY(0);
+  }
 }
   
   /* Right section */
@@ -27,13 +55,15 @@
     background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background for contrast */
     border-radius: 10px; /* Optional: Add rounded corners */
     text-align: left; /* Align text to the right */
+
   }
   .profile-photo {
+    animation: fadeIn 1.5s ease-out;
     width: 400px; /* Adjust as needed */
-    height: 400px; /* Adjust as needed */
+    height: 700px; /* Adjust as needed */
     border-radius: 50%;
     object-fit: cover; /* Ensures the image fits within the dimensions */
-    margin-bottom: 1rem; /* Space below the image */
+    
   }
 .about-container{
     display: flex;
@@ -102,4 +132,20 @@
   padding-left: 0;
   transition: width 0.5s ease-in-out;
 }
-
+.learn-more{
+  background-color: brown;
+  color: azure;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  border: solid azure;
+}
+.learn-more:hover{
+  text-decoration: underline;
+  background-color: #6b7279;
+}
+.description{
+  color: azure;
+  text-align: right;
+  
+}
