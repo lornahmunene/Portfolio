@@ -64,3 +64,32 @@ div {
   
   text-align: center;
 }
+/* For tablets (widths below 768px) */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Add spacing between links */
+    padding-left: 0;
+  }
+
+  .navbar a {
+    padding: 10px 30px; /* Adjust padding for smaller screens */
+    font-size: 18px; /* Reduce font size */
+  }
+}
+
+/* For mobile devices (widths below 480px) */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 1rem; /* Reduce padding inside the navbar */
+  }
+
+  .navbar ul {
+    gap: 10px; /* Reduce spacing between links */
+  }
+
+  .navbar a {
+    padding: 8px 20px; /* Smaller padding */
+    font-size: 16px; /* Smaller font size */
+  }
+}
