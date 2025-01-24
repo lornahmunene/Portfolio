@@ -28,6 +28,8 @@
     animation-name: slideInLeft;
     animation-duration: 3s;
     font-size: 30px;  
+    line-height: 1.8;
+    margin-top: 20px;
 
   }
   
@@ -55,6 +57,7 @@
     background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background for contrast */
     border-radius: 10px; /* Optional: Add rounded corners */
     text-align: left; /* Align text to the right */
+    position:relative;
 
   }
   .profile-photo {
@@ -145,7 +148,64 @@
   background-color: #6b7279;
 }
 .description{
+
+  position: absolute; /* Position it relative to the .my-photo container */
+  top: 200px; /* Adjust the vertical position */
+  right: 20px; /* Adjust the horizontal position */
   color: azure;
+  font-size: 2rem; /* Adjust font size */
   text-align: right;
-  
+}
+/* For tablets (widths below 768px) */
+@media (max-width: 768px) {
+  .home-container {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center;
+      text-align: center; /* Center-align text */
+  }
+
+  .home {
+      margin-top: 20px;
+  }
+
+  .profile-photo {
+      width: 300px; /* Scale photo down */
+      height: 400px;
+  }
+
+  .description {
+      font-size: 20px; /* Adjust font size */
+  }
+
+  p {
+      font-size: 24px; /* Smaller font for paragraph */
+      line-height: 1.6;
+  }
+
+  .learn-more {
+      font-size: 18px;
+      padding: 15px;
+  }
+}
+
+/* For mobile (widths below 480px) */
+@media (max-width: 480px) {
+  .profile-photo {
+      width: 200px; /* Scale photo further down */
+      height: 300px;
+  }
+
+  p {
+      font-size: 18px;
+      line-height: 1.5;
+  }
+
+  h1 {
+      font-size: 36px; /* Scale down heading */
+  }
+
+  .learn-more {
+      font-size: 16px;
+      padding: 10px;
+  }
 }

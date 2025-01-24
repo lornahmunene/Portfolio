@@ -20,7 +20,7 @@ function Home() {
       <div className="my-photo">
         <img src={myPhoto} alt="Lornah Wanjiku" className="profile-photo" />
         <div className="description">
-        <h2>full stack</h2>
+        <h2>Full stack Developer</h2>
         </div>
       </div>
     </div>
