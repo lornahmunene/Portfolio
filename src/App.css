@@ -67,7 +67,7 @@ div {
 /* For tablets (widths below 768px) */
 @media (max-width: 768px) {
   .navbar ul {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: row; /* Stack items vertically */
     gap: 20px; /* Add spacing between links */
     padding-left: 0;
   }
