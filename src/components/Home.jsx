@@ -7,12 +7,16 @@ function Home() {
   return (
     <div className="home-container">
       <div className="home">
-        <h1>Hi! I am Lornah Wanjiku</h1>
+        <div className="home-title">
+          <h1>Hi! I am Lornah Wanjiku</h1>
+        </div>
+        <div className="home-description">
         <p>
           From a curious beginner to a passionate Full-Stack Developer, I love
           crafting meaningful digital experiences that solve real-world
           problems.
         </p>
+        </div>
         <Link to="/about">
           <button className="learn-more">Learn More</button>
         </Link>

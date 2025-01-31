@@ -9,13 +9,14 @@
      
 }
 
-  h1 {
-    font-family:'Times New Roman', Times, serif;
+  .home-title h1 {
+    font-family:'Times New Roman', Times, serif ;
     font-size: 90px;
     margin-top: 130px;
     animation: fadeIn 3s ease-out;
 
   }
+
   @keyframes slideInLeft{
     from {
       transform: translateX(-300px);
@@ -24,7 +25,7 @@
       transform:translateX(0) ;
     }
   }
-  p{
+  .home-description p{
     animation-name: slideInLeft;
     animation-duration: 3s;
     font-size: 30px;  
@@ -61,6 +62,7 @@
 
   }
   .profile-photo {
+    margin-top: 100px;
     animation: fadeIn 1.5s ease-out;
     width: 400px; /* Adjust as needed */
     height: 700px; /* Adjust as needed */
@@ -68,23 +70,8 @@
     object-fit: cover; /* Ensures the image fits within the dimensions */
     
   }
-.about-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh; /* Full viewport height */
-    width: 100vw; /* Full viewport width */
-    margin: 0; /* Remove default margin */
-    background-image: url('https://weblium.com/blog/wp-content/uploads/2021/05/19-Best-About-Me-Page-Examples-and-How-to-Write-a-Killer-About-Me-Page-1-1-1.png');
-    background-size: cover; /* Ensure the image covers the entire container */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent repetition of the image */
-}
-.about {
-    flex: 1; /* Left section takes one portion */
-    padding: 2rem; /* Add some space inside the section */
-    color: white;
-}
+
+
 .skills-page {
   margin-top: 110px;
   height: 100vh;
@@ -153,7 +140,7 @@
   top: 200px; /* Adjust the vertical position */
   right: 20px; /* Adjust the horizontal position */
   color: azure;
-  font-size: 2rem; /* Adjust font size */
+  font-size: 2rem !important; /* Adjust font size */
   text-align: right;
 }
 /* For tablets (widths below 768px) */
@@ -191,16 +178,24 @@
 /* For mobile (widths below 480px) */
 @media (max-width: 480px) {
   .profile-photo {
-      width: 200px; /* Scale photo further down */
-      height: 250px;
+      width: 120px; /* Scale photo further down */
+      height: 220px;
+      margin-top: 150px;
+  }
+  .my-photo{
+    height: 87vh;
+  }
+  .description{
+    margin-top: 150px;
   }
 
-  p {
-      font-size: 18px;
-      line-height: 1.5;
+  .home-description p {
+      font-size: 16px;
+      line-height: 1;
   }
 
-  h1 {
+  .home-title h1 {
+    margin-top: 50px;
       font-size: 36px; /* Scale down heading */
   }
 
@@ -209,3 +204,73 @@
       padding: 10px;
   }
 }
+/* Override Bootstrap default h1 styles */
+.about-container h1 {
+  font-size: 70px !important; /* Override Bootstrap */
+  font-weight: bold !important;
+  color: #ffffff; /* Adjust the color as needed */
+  margin-bottom: 10px !important;
+  text-align: left;
+}
+
+/* Adjust paragraph styles */
+.about-container p {
+  margin-top: 0 !important;
+  padding: 0 !important;
+  line-height: 1.8 !important;
+  font-size: 25px !important;
+  text-align: left !important;
+  max-width: 70%;
+  color: #ddd; /* Light text for dark background */
+}
+
+/* Ensure .about-container is properly styled */
+.about-container {
+  background-color: #444;
+  height: 950px;
+  display: flex;
+  align-items: center; /* Centers vertically */
+  justify-content: center;
+  
+  gap: 0px; /* Space between text & image */
+  
+}
+
+.about-my-photo {
+  flex: 1;
+  display: flex;
+  text-align: left;
+  position: left;
+  border-radius: 10px;
+  margin-right: 360px;
+  margin-top: -8%;
+
+}
+
+
+
+
+
+/* Social media icons */
+.social-media-icons {
+  display: flex;
+  gap: 200px;
+  margin-top: 100px;
+}
+
+.social-media-icons a {
+  color: #ffffff !important; /* Ensures white color */
+  transition: color 0.3s;
+}
+
+.social-media-icons a:hover {
+  color: brown !important; /* Bootstrap primary blue on hover */
+}
+
+/* Ensuring Bootstrap container doesn't override spacing */
+.container {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+
