@@ -4,8 +4,9 @@ import './styles.css';
 import { Container } from 'react-bootstrap';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram, faLinkedin, faTwitter  } from '@fortawesome/free-brands-svg-icons';
 import myPhoto from '../assets/my-photo.jpg';
+import reactLogo from '../assets/react-logo.png';
 
 function About() {
   return (
@@ -23,8 +24,9 @@ function About() {
           technologies like MySQL. She thrives on problem-solving, crafting seamless user experiences, and 
           continuously exploring new tools and technologies to stay ahead in the ever-evolving tech landscape.
         </p>
+        
 
-        {/* Social Media Icons Section */}
+        
         <div className="social-media-icons">
           <a href="https://www.facebook.com/share/18BgD94juj/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faFacebook} size="2x" />
@@ -35,12 +37,16 @@ function About() {
           <a href="https://x.com/LornahWanj93400" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faTwitter} size="2x" />
           </a>
+          <a href="https://www.linkedin.com/in/lornah-munene-3b5a49309/" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faLinkedin} size="2x" />
+          </a>
         </div>
       </Container>
 
       <div className="about-my-photo">
         <img src={myPhoto} alt="Lornah Wanjiku" className="profile-photo" />
       </div>
+      
     </div>
   );
 }

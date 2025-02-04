@@ -1,41 +1,42 @@
 import React from 'react';
 import './styles.css';
 
+import reactLogo from '../assets/react-logo.png';
+import javascriptLogo from '../assets/javascript-logo.png';
+import htmlLogo from '../assets/html-logo.png';
+import cssLogo from '../assets/css-logo.png';
+import pythonLogo from '../assets/python-logo.png';
+import flaskLogo from '../assets/flask-logo.png';
+
 function Skills() {
   return (
-    <div className="skills-page">
-      <h1 className="skills-header">My Skills</h1>
-      <div className="skills-container">
-        {/* Skill: HTML */}
-        <div className="skill">
-          <h3>HTML</h3>
-          <div className="skill-bar">
-            <div className="skill-fill" style={{ width: '90%' }}>90%</div>
-          </div>
+    <div className="skills-container">
+      <h2 className="skills-title">My Tech Stack</h2>
+      
+      <div className="skills-grid">
+        <div className="skill-item">
+          <img src={reactLogo} alt="React" />
+          <p>React</p>
         </div>
-
-        {/* Skill: CSS */}
-        <div className="skill">
-          <h3>CSS</h3>
-          <div className="skill-bar">
-            <div className="skill-fill" style={{ width: '85%' }}>85%</div>
-          </div>
+        <div className="skill-item">
+          <img src={javascriptLogo} alt="JavaScript" />
+          <p>Javascript</p>
         </div>
-
-        {/* Skill: JavaScript */}
-        <div className="skill">
-          <h3>JavaScript</h3>
-          <div className="skill-bar">
-            <div className="skill-fill" style={{ width: '80%' }}>80%</div>
-          </div>
+        <div className="skill-item">
+          <img src={htmlLogo} alt="HTML" />
+          <p>HTML</p>
         </div>
-
-        {/* Skill: React */}
-        <div className="skill">
-          <h3>React</h3>
-          <div className="skill-bar">
-            <div className="skill-fill" style={{ width: '75%' }}>75%</div>
-          </div>
+        <div className="skill-item">
+          <img src={cssLogo} alt="CSS" />
+          <p>CSS</p>
+        </div>
+        <div className="skill-item">
+          <img src={pythonLogo} alt="Python" />
+          <p>Python</p>
+        </div>
+        <div className="skill-item">
+          <img src={flaskLogo} alt="Flask" />
+          <p>Flask</p>
         </div>
       </div>
     </div>
